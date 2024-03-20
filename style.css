@@ -1,0 +1,162 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+   color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+}
+#bottom{
+    height: 100vh;
+    width: 100%;
+    /* background-color: green; */
+}
+#bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#top{
+    height: 100vh;
+    width: 100%; 
+    pointer-events: none;
+    
+  /* background-color:black; */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#working-area{
+   height: 100%;
+   max-width: 80%;
+   width: 100%;
+   margin: 0 10%;
+  /* border: 1px solid black; */
+  position: relative;
+}
+#working-area nav{
+    height: 12%;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#nav-left{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+   gap: 30px;
+}
+#nav-left img{
+    height: 40px;
+    width:80px;
+}
+#nav-left h3, #nav-right h3{
+    text-transform: uppercase;
+    font-size: 1vw;
+    color: #fff;
+    
+    font-weight: 500;
+  
+}
+#nav-right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   gap: 40px;
+}
+#content{
+    
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute; 
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+#left-div{
+    /* padding: 5vw; */
+    
+    min-width: 50%;
+    position: relative;
+}
+#right-div{
+    /* padding: 5vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+    width: 20%;
+    /* background-color: red */
+}
+#left-div .elem{
+    height: 9vw;
+    /* background-color: blue; */
+    overflow: hidden;
+    position: relative;
+    
+
+
+
+}
+.elem h1{
+   font-family: "Kajiro";
+   font-size: 9vw;
+   font-weight: 100;
+   text-transform: uppercase;
+   position: absolute;
+   top: 100%;
+   left: 0;
+}
+.elem h1:nth-child(1){
+    top: 0;
+}
+#left-div button{
+    padding: 0.5vw 2vw;
+    background-color: #fff;
+    color: black;
+    font-family: "Kajiro";
+    font-size: 3vw;
+    border: none;
+    /* font-weight: 400; */
+    margin-top: 1vw;
+}
+#right-div  #img-div{
+    height: 30%;
+    width: 100%;
+    margin-bottom: 1.5vw;
+    margin-top: 1vw;
+}
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+#right-div p{
+    font-size: 1vw;
+    text-align: right;
+    line-height: 1vw;
+}
+#right-div p:nth-child(3){
+    margin-bottom: 3vw;
+    
+}
